@@ -30,7 +30,6 @@ def compare():
             for child in tree.iter(
                     tag='{http://docs.oasis-open.org/odata/ns/edmx}Reference'):
                 if child.attrib['Uri'] == 'Resource.xml':
-                    print("################")
                     resource_list = ['identity', 'description', 'name', 'uuid',
                                      'links', 'oem', 'state',
                                      'health', 'status']
@@ -86,7 +85,6 @@ def compare():
 
             # format class set to get redundant
             list = ['get', 'invalidate', 'keys', 'values', 'items', 'json',
-                    'uuid',
                     'refresh', 'redfishversion', 'getmembers', 'getmember']
             for item in list:
                 if item in class_set:
@@ -121,5 +119,5 @@ def parse_resource(filename):
                       ',sub2.text：', sub2.text)
 
 
-# compare()
-parse_resource('RedfishExtensions.xml')
+compare()
+# parse_resource('RedfishExtensions.xml')
