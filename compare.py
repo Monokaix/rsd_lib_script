@@ -85,7 +85,9 @@ def compare():
 
             # format class set to get redundant
             list = ['get', 'invalidate', 'keys', 'values', 'items', 'json',
-                    'refresh', 'redfishversion', 'getmembers', 'getmember']
+                    'refresh', 'redfishversion', 'getmembers', 'getmember',
+                    'path', 'update', 'delete', 'membersidentities',
+                    'resourcetype', 'healthrollup','racksupportsdisaggregatedpowercooling','parentid','geotag','rmmpresent']
             for item in list:
                 if item in class_set:
                     class_set.remove(item)
