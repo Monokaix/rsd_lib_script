@@ -1,0 +1,168 @@
+########################
+ThermalZone.xml
+Property Miss:{'actions', 'links'}
+NavigationProperty Miss:set()
+Redundant:{'xlocation', 'ulocation', 'uheight', 'rackunits'}
+type check:{'maxfanssupported': 'Edm.Int64', 'numberoffanspresent': 'Edm.Int64'}
+########################
+TaskService.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{'serviceenabled': 'Edm.Boolean', 'lifecycleeventontaskstatechange': 'Edm.Boolean'}
+########################
+RemoteTarget.xml
+Property Miss:{'initiatoriqn', 'mutualusername', 'links', 'type', 'chap', 'mutualsecret', 'secret', 'initiator', 'username'}
+NavigationProperty Miss:{'logicaldrive'}
+Redundant:{'iqn', 'initiators', 'targettype'}
+type check:{'targetportalport': 'Edm.Int64', 'lun': 'Edm.Int64'}
+########################
+EthernetInterface.xml
+Property Miss:{'uefidevicepath', 'linkstatus'}
+NavigationProperty Miss:{'endpoints'}
+Redundant:{'subnetmask', 'intelrackScale', 'gateway', 'address', 'addressorigin', 'addressstate', 'prefixlength', 'neighborport', 'vlanid', 'vlanenable'}
+type check:{'mtusize': 'Edm.Int64', 'interfaceenabled': 'Edm.Boolean', 'autoneg': 'Edm.Boolean', 'maxipv6staticaddresses': 'Edm.Int64', 'speedmbps': 'Edm.Int64', 'label': 'Edm.Int64', 'fullduplex': 'Edm.Boolean', 'precedence': 'Edm.Int64'}
+########################
+EthernetSwitchACL.xml
+Property Miss:{'actions'}
+NavigationProperty Miss:{'boundports'}
+Redundant:{'aclrules'}
+type check:{}
+########################
+PowerZone.xml
+Property Miss:{'actions', 'links'}
+NavigationProperty Miss:set()
+Redundant:{'xlocation', 'ulocation', 'uheight', 'rackunits'}
+type check:{'numberofpsuspresent': 'Edm.Int64', 'maxpsussupported': 'Edm.Int64'}
+########################
+Chassis.xml
+Property Miss:{'actions', 'intrusionsensornumber', 'physicalsecurity', 'intrusionsensorrearm', 'intrusionsensor', 'powerstate'}
+NavigationProperty Miss:{'logservices', 'cooledby', 'drives', 'storage', 'poweredby'}
+Redundant:{'pciedevices', 'switches'}
+type check:{'intrusionsensornumber': 'Edm.Int64'}
+########################
+EthernetSwitchStaticMAC.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{'vlanid': 'Edm.Int32'}
+########################
+Fabric.xml
+Property Miss:{'actions', 'oem', 'links'}
+NavigationProperty Miss:set()
+Redundant:{'switchs'}
+type check:{'maxzones': 'Edm.Int64'}
+########################
+Manager.xml
+Property Miss:{'actions', 'datetime', 'datetimelocaloffset'}
+NavigationProperty Miss:{'logservices', 'serialinterfaces', 'virtualmedia', 'managerinchassis', 'redundancy'}
+Redundant:set()
+type check:{'maxconcurrentsessions': 'Edm.Int64', 'serviceenabled': 'Edm.Boolean'}
+########################
+PhysicalDrive.xml
+Property Miss:{'links', 'type'}
+NavigationProperty Miss:{'usedby'}
+Redundant:{'drivetype'}
+type check:{'rpm': 'Edm.Int32'}
+########################
+PCIeFunction.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{'functionid': 'Edm.Int64'}
+########################
+EthernetSwitch.xml
+Property Miss:{'serialnumber', 'maxaclnumber'}
+NavigationProperty Miss:set()
+Redundant:{'serianumber'}
+type check:{'maxaclnumber': 'Edm.Int32'}
+########################
+EthernetSwitchACLRule.xml
+Property Miss:{'macaddress'}
+NavigationProperty Miss:set()
+Redundant:{'addaclrule', 'address'}
+type check:{'mask': 'Edm.Int64', 'ruleid': 'Edm.Int64', 'id': 'Edm.Int64', 'l4protocol': 'Edm.Int64', 'port': 'Edm.Int64'}
+########################
+Switch.xml
+Property Miss:{'oem'}
+NavigationProperty Miss:{'logservices', 'managedby', 'redundancy'}
+Redundant:{'resetswitch', 'getresetactionelement', 'getallowedresetswitchvalues', 'reset'}
+type check:{'totalswitchwidth': 'Edm.Int64', 'domainid': 'Edm.Int64', 'ismanaged': 'Edm.Boolean'}
+########################
+Thermal.xml
+Property Miss:{'minreadingrangetemp', 'maxreadingrangetemp', 'fanname'}
+NavigationProperty Miss:set()
+Redundant:{'memberid', 'maxnumsupported', 'mode', 'minnumneeded', 'redundancyenabled', 'redundancyset'}
+type check:{'sensornumber': 'Edm.Int64', 'upperthresholdfatal': 'Edm.Int64', 'lowerthresholdfatal': 'Edm.Int64', 'lowerthresholdnoncritical': 'Edm.Int64', 'reading': 'Edm.Int64', 'upperthresholdcritical': 'Edm.Int64', 'maxreadingrange': 'Edm.Int64', 'minreadingrange': 'Edm.Int64', 'lowerthresholdcritical': 'Edm.Int64', 'upperthresholdnoncritical': 'Edm.Int64'}
+########################
+Memory.xml
+Property Miss:{'passphrasestate', 'actions', 'sizemib', 'regionid', 'volatileregionsizelimitmib', 'oem', 'memoryclassification', 'subsystemdeviceid', 'offsetmib', 'issparedeviceenabled', 'persistentregionsizelimitmib', 'regions', 'maxtdpmilliwatts', 'subsystemvendorid', 'sparedevicecount', 'isrankspareenabled', 'firmwareapiversion'}
+NavigationProperty Miss:set()
+Redundant:{'frirmwareapiversion'}
+type check:{'passphrasestate': 'Edm.Boolean', 'memorycontroller': 'Edm.Int64', 'rankcount': 'Edm.Int64', 'capacitymib': 'Edm.Int64', 'slot': 'Edm.Int64', 'offsetmib': 'Edm.Int64', 'issparedeviceenabled': 'Edm.Boolean', 'sizemib': 'Edm.Int64', 'operatingspeedmhz': 'Edm.Int64', 'persistentregionsizelimitmib': 'Edm.Int64', 'sparedevicecount': 'Edm.Int64', 'volatileregionsizelimitmib': 'Edm.Int64', 'isrankspareenabled': 'Edm.Boolean', 'channel': 'Edm.Int64', 'datawidthbits': 'Edm.Int64', 'socket': 'Edm.Int64', 'buswidthbits': 'Edm.Int64'}
+########################
+NetworkInterface.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{}
+########################
+LogicalDrive.xml
+Property Miss:{'links', 'type'}
+NavigationProperty Miss:{'usedby', 'physicaldrives', 'targets', 'masterdrive', 'logicaldrives'}
+Redundant:{'drivetype'}
+type check:{'snapshot': 'Edm.Boolean', 'protected': 'Edm.Boolean', 'bootable': 'Edm.Boolean'}
+########################
+Port.xml
+Property Miss:set()
+NavigationProperty Miss:{'connectedswitchports', 'connectedswitches'}
+Redundant:{'getallowedresetportvalues', 'intelrackScale', 'odatatype', 'getresetactionelement', 'pcieconnectionid', 'resetport', 'reset'}
+type check:{'width': 'Edm.Int64', 'currentspeedgbps': 'Edm.Int64', 'maxspeedgbps': 'Edm.Int64'}
+########################
+EventService.xml
+Property Miss:{'actions', 'oem'}
+NavigationProperty Miss:set()
+Redundant:{'subscriptionss'}
+type check:{'deliveryretryattempts': 'Edm.Int64', 'deliveryretryintervalseconds': 'Edm.Int64', 'serviceenabled': 'Edm.Boolean'}
+########################
+Zone.xml
+Property Miss:set()
+NavigationProperty Miss:{'involvedswitches'}
+Redundant:{'endpointidentities'}
+type check:{}
+########################
+PCIeDevice.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{}
+########################
+NetworkDeviceFunction.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:set()
+type check:{'secondaryvlanenable': 'Edm.Boolean', 'targetinfoviadhcp': 'Edm.Boolean', 'primarylun': 'Edm.Int64', 'deviceenabled': 'Edm.Boolean', 'secondarytargettcpport': 'Edm.Int64', 'ipmaskdnsviadhcp': 'Edm.Boolean', 'routeradvertisementenabled': 'Edm.Boolean', 'primaryvlanid': 'Edm.Int64', 'secondaryvlanid': 'Edm.Int64', 'primaryvlanenable': 'Edm.Boolean', 'secondarylun': 'Edm.Int64', 'primarytargettcpport': 'Edm.Int64'}
+########################
+StorageService.xml
+Property Miss:{'links'}
+NavigationProperty Miss:{'managedby', 'drives'}
+Redundant:{'remotetars', 'physicaldrives'}
+type check:{}
+########################
+Power.xml
+Property Miss:{'oem'}
+NavigationProperty Miss:set()
+Redundant:{'memberid', 'maxnumsupported', 'mode', 'minnumneeded', 'indicatorled', 'redundancyset'}
+type check:{'sensornumber': 'Edm.Int64', 'correctioninms': 'Edm.Int64', 'intervalinmin': 'Edm.Int64'}
+########################
+Task.xml
+Property Miss:set()
+NavigationProperty Miss:set()
+Redundant:{'message', 'severity', 'messageid', 'messageargs', 'relatedproperties'}
+type check:{}
+########################
+EthernetSwitchPort.xml
+Property Miss:{'operationalstate', 'framesize', 'ipv6addresses', 'portclass', 'cableid', 'ipv4addresses', 'portmode', 'linkspeedmbps', 'administrativestate', 'linktype', 'fullduplex', 'neighbormac', 'neighborinfo', 'autosense', 'switchid', 'macaddress'}
+NavigationProperty Miss:{'primaryvlan', 'portmembers', 'staticmacs', 'switch', 'vlans', 'memberofport', 'activeacls'}
+Redundant:{'reset', 'getresetactionelement', 'intelrackScale', 'currentspeedgbps', 'getallowedresetportvalues', 'actions', 'width', 'odatatype', 'portprotocol', 'pcieconnectionid', 'resetport', 'associatedendpoints', 'maxspeedgbps'}
+type check:{'linkspeedmbps': 'Edm.Int64', 'autosense': 'Edm.Boolean', 'fullduplex': 'Edm.Boolean', 'framesize': 'Edm.Int64'}
